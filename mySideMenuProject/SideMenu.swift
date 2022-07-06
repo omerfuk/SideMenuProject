@@ -9,8 +9,14 @@ import Foundation
 import UIKit
 protocol MenuControllerDelegate {
     
-    func didSelectMenuItem(named: String)
+    func didSelectMenuItem(named: SideMenuItem)
     
+}
+
+enum SideMenuItem: String, CaseIterable{
+    case home = "Home"
+    case info = "Info"
+    case settings = "Settings"
 }
 
 class MenuController: UITableViewController {
@@ -18,10 +24,10 @@ class MenuController: UITableViewController {
     public var delegate: MenuControllerDelegate?
     
     
-    private let menuItems: [String]
+    private let menuItems: [SideMenuItem]
     private let color = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1)
     
-    init(with menuItems: [String]) {
+    init(with menuItems: [SideMenuItem]) {
         self.menuItems = menuItems
         super.init(nibName: nil, bundle: nil)
         
@@ -48,7 +54,7 @@ class MenuController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = menuItems[indexPath.row]
+        cell.textLabel?.text = menuItems[indexPath.row].rawValue
         cell.textLabel?.textColor = .white
         cell.backgroundColor = color
         cell.contentView.backgroundColor = color

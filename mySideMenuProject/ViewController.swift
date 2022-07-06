@@ -21,7 +21,7 @@ class ViewController: UIViewController, MenuControllerDelegate, UINavigationCont
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let menu = MenuController(with: ["Home", "Info", "Settings"])
+        let menu = MenuController(with:SideMenuItem.allCases)
         menu.delegate = self
         sideMenu = SideMenuNavigationController(rootViewController: menu)
         sideMenu?.leftSide = true
@@ -30,30 +30,24 @@ class ViewController: UIViewController, MenuControllerDelegate, UINavigationCont
         addChildControllers()
     }
     
-    func didSelectMenuItem(named: String) {
+    func didSelectMenuItem(named: SideMenuItem) {
         
         sideMenu?.dismiss(animated: true, completion: { [weak self] in
             
-            self?.title = named
+            self?.title = named.rawValue
             
-            if named == "Home" {
-                
+            switch named {
+            case .home:
                 self?.settingsController.view.isHidden = true
                 self?.infoController.view.isHidden = true
-                
-            }
-            
-            else if named == "Info" {
+            case .info:
                 self?.settingsController.view.isHidden = true
                 self?.infoController.view.isHidden = false
-                
-            }
-            
-            else if named == "Settings" {
-                
+            case .settings:
                 self?.settingsController.view.isHidden = false
                 self?.infoController.view.isHidden = true
             }
+            
         })
         
     }
