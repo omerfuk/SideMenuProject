@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE76A1122876137C009FDA4D /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE76A1112876137C009FDA4D /* SideMenu.swift */; };
+		DE76A11428761395009FDA4D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE76A11328761395009FDA4D /* InfoViewController.swift */; };
+		DE76A116287613A8009FDA4D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE76A115287613A8009FDA4D /* SettingsViewController.swift */; };
 		DEA7015D28760C6300B0FD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7015C28760C6300B0FD7A /* AppDelegate.swift */; };
 		DEA7015F28760C6300B0FD7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7015E28760C6300B0FD7A /* SceneDelegate.swift */; };
 		DEA7016128760C6300B0FD7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7016028760C6300B0FD7A /* ViewController.swift */; };
 		DEA7016428760C6300B0FD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA7016228760C6300B0FD7A /* Main.storyboard */; };
 		DEA7016628760C6400B0FD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA7016528760C6400B0FD7A /* Assets.xcassets */; };
 		DEA7016928760C6400B0FD7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA7016728760C6400B0FD7A /* LaunchScreen.storyboard */; };
+		F6BAB9DB98FBA408DE32A5C5 /* Pods_mySideMenuProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3982AF11B460D9D9AD4F0E /* Pods_mySideMenuProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CD15FBAAA5E43EA83FB480B /* Pods-mySideMenuProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mySideMenuProject.debug.xcconfig"; path = "Target Support Files/Pods-mySideMenuProject/Pods-mySideMenuProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3982AF11B460D9D9AD4F0E /* Pods_mySideMenuProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mySideMenuProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04D9C886BFBAD5494E4702C /* Pods-mySideMenuProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mySideMenuProject.release.xcconfig"; path = "Target Support Files/Pods-mySideMenuProject/Pods-mySideMenuProject.release.xcconfig"; sourceTree = "<group>"; };
+		DE76A1112876137C009FDA4D /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		DE76A11328761395009FDA4D /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DE76A115287613A8009FDA4D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DEA7015928760C6300B0FD7A /* mySideMenuProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySideMenuProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA7015C28760C6300B0FD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA7015E28760C6300B0FD7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BAB9DB98FBA408DE32A5C5 /* Pods_mySideMenuProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD5A5E7B019F67D8D849039 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CD15FBAAA5E43EA83FB480B /* Pods-mySideMenuProject.debug.xcconfig */,
+				C04D9C886BFBAD5494E4702C /* Pods-mySideMenuProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69FC2F79E48B486F2E76F18D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C3982AF11B460D9D9AD4F0E /* Pods_mySideMenuProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DEA7015028760C6200B0FD7A = {
 			isa = PBXGroup;
 			children = (
 				DEA7015B28760C6300B0FD7A /* mySideMenuProject */,
 				DEA7015A28760C6300B0FD7A /* Products */,
+				1DD5A5E7B019F67D8D849039 /* Pods */,
+				69FC2F79E48B486F2E76F18D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +93,9 @@
 				DEA7016528760C6400B0FD7A /* Assets.xcassets */,
 				DEA7016728760C6400B0FD7A /* LaunchScreen.storyboard */,
 				DEA7016A28760C6400B0FD7A /* Info.plist */,
+				DE76A1112876137C009FDA4D /* SideMenu.swift */,
+				DE76A11328761395009FDA4D /* InfoViewController.swift */,
+				DE76A115287613A8009FDA4D /* SettingsViewController.swift */,
 			);
 			path = mySideMenuProject;
 			sourceTree = "<group>";
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEA7016D28760C6400B0FD7A /* Build configuration list for PBXNativeTarget "mySideMenuProject" */;
 			buildPhases = (
+				96D58AFA0738A30C801C16EB /* [CP] Check Pods Manifest.lock */,
 				DEA7015528760C6200B0FD7A /* Sources */,
 				DEA7015628760C6200B0FD7A /* Frameworks */,
 				DEA7015728760C6200B0FD7A /* Resources */,
+				72738D636EEF4EE1412AC75D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +168,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72738D636EEF4EE1412AC75D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mySideMenuProject/Pods-mySideMenuProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mySideMenuProject/Pods-mySideMenuProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mySideMenuProject/Pods-mySideMenuProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96D58AFA0738A30C801C16EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mySideMenuProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEA7015528760C6200B0FD7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +218,9 @@
 				DEA7016128760C6300B0FD7A /* ViewController.swift in Sources */,
 				DEA7015D28760C6300B0FD7A /* AppDelegate.swift in Sources */,
 				DEA7015F28760C6300B0FD7A /* SceneDelegate.swift in Sources */,
+				DE76A1122876137C009FDA4D /* SideMenu.swift in Sources */,
+				DE76A11428761395009FDA4D /* InfoViewController.swift in Sources */,
+				DE76A116287613A8009FDA4D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		DEA7016E28760C6400B0FD7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD15FBAAA5E43EA83FB480B /* Pods-mySideMenuProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +391,7 @@
 		};
 		DEA7016F28760C6400B0FD7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04D9C886BFBAD5494E4702C /* Pods-mySideMenuProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
